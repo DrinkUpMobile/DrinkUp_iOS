@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		1845849425C375970074B8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845849225C375970074B8CD /* LaunchScreen.storyboard */; };
 		1845849F25C375970074B8CD /* DrinkUp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845849E25C375970074B8CD /* DrinkUp_iOSTests.swift */; };
 		184584AA25C375970074B8CD /* DrinkUp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */; };
+		287F31B068883F94AD1F3DFF /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */; };
+		6E2F9B34BCF2E40819DADC71 /* Pods_DrinkUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2914869730E68921F06A1F /* Pods_DrinkUp_iOS.framework */; };
+		B8AD38E8F0245B861D4DAEE0 /* Pods_DrinkUp_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		105B18618B90C1141C3070D7 /* Pods-DrinkUp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1845848125C375960074B8CD /* DrinkUp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkUp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1845848425C375960074B8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1845848625C375960074B8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 		184584A525C375970074B8CD /* DrinkUp_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkUp_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUp_iOSUITests.swift; sourceTree = "<group>"; };
 		184584AB25C375970074B8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FD520941D9943B38B4EE03 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92094D30AFA34EFB929BDD51 /* Pods-DrinkUp_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOSTests/Pods-DrinkUp_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A215347C2623FC9B72573559 /* Pods-DrinkUp_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS.release.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AF5A94F964402087F0FA5455 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS-DrinkUp_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0FF641EF5AA6666FFAD32DA /* Pods-DrinkUp_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOSTests/Pods-DrinkUp_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2914869730E68921F06A1F /* Pods_DrinkUp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2F9B34BCF2E40819DADC71 /* Pods_DrinkUp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8AD38E8F0245B861D4DAEE0 /* Pods_DrinkUp_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287F31B068883F94AD1F3DFF /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				1845849D25C375970074B8CD /* DrinkUp_iOSTests */,
 				184584A825C375970074B8CD /* DrinkUp_iOSUITests */,
 				1845848225C375960074B8CD /* Products */,
+				6E1A27D18257AFD3C90B723D /* Pods */,
+				E61E56461A630D0B049EEC91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,29 @@
 			path = DrinkUp_iOSUITests;
 			sourceTree = "<group>";
 		};
+		6E1A27D18257AFD3C90B723D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				105B18618B90C1141C3070D7 /* Pods-DrinkUp_iOS.debug.xcconfig */,
+				A215347C2623FC9B72573559 /* Pods-DrinkUp_iOS.release.xcconfig */,
+				87FD520941D9943B38B4EE03 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig */,
+				AF5A94F964402087F0FA5455 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.release.xcconfig */,
+				B0FF641EF5AA6666FFAD32DA /* Pods-DrinkUp_iOSTests.debug.xcconfig */,
+				92094D30AFA34EFB929BDD51 /* Pods-DrinkUp_iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E61E56461A630D0B049EEC91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2914869730E68921F06A1F /* Pods_DrinkUp_iOS.framework */,
+				3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */,
+				687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184584AE25C375970074B8CD /* Build configuration list for PBXNativeTarget "DrinkUp_iOS" */;
 			buildPhases = (
+				F77B7C068BA3EC1531448A11 /* [CP] Check Pods Manifest.lock */,
 				1845847D25C375960074B8CD /* Sources */,
 				1845847E25C375960074B8CD /* Frameworks */,
 				1845847F25C375960074B8CD /* Resources */,
+				DF4C1AB3A2DDB80BE93D56EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184584B125C375970074B8CD /* Build configuration list for PBXNativeTarget "DrinkUp_iOSTests" */;
 			buildPhases = (
+				008583B5018433567E8E9C09 /* [CP] Check Pods Manifest.lock */,
 				1845849625C375970074B8CD /* Sources */,
 				1845849725C375970074B8CD /* Frameworks */,
 				1845849825C375970074B8CD /* Resources */,
@@ -173,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184584B425C375970074B8CD /* Build configuration list for PBXNativeTarget "DrinkUp_iOSUITests" */;
 			buildPhases = (
+				55BC37C5A42BB160D5D07FD2 /* [CP] Check Pods Manifest.lock */,
 				184584A125C375970074B8CD /* Sources */,
 				184584A225C375970074B8CD /* Frameworks */,
 				184584A325C375970074B8CD /* Resources */,
+				94579AEBB02F6ADD8BB0BED1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +300,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		008583B5018433567E8E9C09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinkUp_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55BC37C5A42BB160D5D07FD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94579AEBB02F6ADD8BB0BED1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF4C1AB3A2DDB80BE93D56EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F77B7C068BA3EC1531448A11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinkUp_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1845847D25C375960074B8CD /* Sources */ = {
@@ -437,6 +585,7 @@
 		};
 		184584AF25C375970074B8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105B18618B90C1141C3070D7 /* Pods-DrinkUp_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +604,7 @@
 		};
 		184584B025C375970074B8CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A215347C2623FC9B72573559 /* Pods-DrinkUp_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +623,7 @@
 		};
 		184584B225C375970074B8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FF641EF5AA6666FFAD32DA /* Pods-DrinkUp_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +645,7 @@
 		};
 		184584B325C375970074B8CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92094D30AFA34EFB929BDD51 /* Pods-DrinkUp_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +667,7 @@
 		};
 		184584B525C375970074B8CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87FD520941D9943B38B4EE03 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +687,7 @@
 		};
 		184584B625C375970074B8CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF5A94F964402087F0FA5455 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
