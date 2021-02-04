@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         
         self.password.font = .systemFont(ofSize: 16)
         self.password.isSecureTextEntry = true /// hides text when user types password. Shows this: "•••••••"
-        self.password.placeholder = "Type password address..."
+        self.password.placeholder = "Type password..."
         
         self.button.layer.cornerRadius = 8 /// Rounded corners
         self.button.backgroundColor = .gray
