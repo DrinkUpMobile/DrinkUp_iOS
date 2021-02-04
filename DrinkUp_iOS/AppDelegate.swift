@@ -17,8 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        
+        /// Initialize stuff here (like Firebase, 3rd party frameworks, push notifications, etc...)
+        
+        /// Called when app is launched (user sees the launch screen with this appears)
+        
         return true
     }
+    
+    
+    
+    
+    /// Don't worry about stuff below unless we need it...
+    
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
