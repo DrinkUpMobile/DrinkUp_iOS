@@ -17,6 +17,9 @@
 		1845849F25C375970074B8CD /* DrinkUp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845849E25C375970074B8CD /* DrinkUp_iOSTests.swift */; };
 		184584AA25C375970074B8CD /* DrinkUp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */; };
 		188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188179A225C600F100424C32 /* GoogleService-Info.plist */; };
+		18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D3E725CCA54B00282F94 /* Auth.storyboard */; };
+		18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */; };
+		18E5D3F925CCAE9700282F94 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F825CCAE9700282F94 /* Firebase.swift */; };
 		287F31B068883F94AD1F3DFF /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */; };
 		6E2F9B34BCF2E40819DADC71 /* Pods_DrinkUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2914869730E68921F06A1F /* Pods_DrinkUp_iOS.framework */; };
 		B8AD38E8F0245B861D4DAEE0 /* Pods_DrinkUp_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */; };
@@ -57,6 +60,9 @@
 		184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUp_iOSUITests.swift; sourceTree = "<group>"; };
 		184584AB25C375970074B8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188179A225C600F100424C32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18E5D3E725CCA54B00282F94 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18E5D3F825CCAE9700282F94 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FD520941D9943B38B4EE03 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,10 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				1845849225C375970074B8CD /* LaunchScreen.storyboard */,
-				1845848A25C375960074B8CD /* Main.storyboard */,
 				1845848425C375960074B8CD /* AppDelegate.swift */,
 				1845848625C375960074B8CD /* SceneDelegate.swift */,
-				1845848825C375960074B8CD /* ViewController.swift */,
+				18E5D3F725CCAE8900282F94 /* API */,
+				18E5D3F625CCAE7B00282F94 /* Storyboards */,
 				1845849025C375970074B8CD /* Assets.xcassets */,
 				1845849525C375970074B8CD /* Info.plist */,
 				188179A225C600F100424C32 /* GoogleService-Info.plist */,
@@ -149,6 +155,41 @@
 				184584AB25C375970074B8CD /* Info.plist */,
 			);
 			path = DrinkUp_iOSUITests;
+			sourceTree = "<group>";
+		};
+		18E5D3EC25CCA60500282F94 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				18E5D3E725CCA54B00282F94 /* Auth.storyboard */,
+				18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		18E5D3ED25CCA61100282F94 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1845848A25C375960074B8CD /* Main.storyboard */,
+				1845848825C375960074B8CD /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		18E5D3F625CCAE7B00282F94 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				18E5D3EC25CCA60500282F94 /* Auth */,
+				18E5D3ED25CCA61100282F94 /* Main */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		18E5D3F725CCAE8900282F94 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				18E5D3F825CCAE9700282F94 /* Firebase.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		6E1A27D18257AFD3C90B723D /* Pods */ = {
@@ -284,6 +325,7 @@
 			files = (
 				1845849425C375970074B8CD /* LaunchScreen.storyboard in Resources */,
 				1845849125C375970074B8CD /* Assets.xcassets in Resources */,
+				18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */,
 				188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */,
 				1845848C25C375960074B8CD /* Main.storyboard in Resources */,
 			);
@@ -413,9 +455,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E5D3F925CCAE9700282F94 /* Firebase.swift in Sources */,
 				1845848925C375960074B8CD /* ViewController.swift in Sources */,
 				1845848525C375960074B8CD /* AppDelegate.swift in Sources */,
 				1845848725C375960074B8CD /* SceneDelegate.swift in Sources */,
+				18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */,
 				1845848F25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
