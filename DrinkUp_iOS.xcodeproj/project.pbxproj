@@ -17,6 +17,7 @@
 		1845849F25C375970074B8CD /* DrinkUp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845849E25C375970074B8CD /* DrinkUp_iOSTests.swift */; };
 		184584AA25C375970074B8CD /* DrinkUp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */; };
 		188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188179A225C600F100424C32 /* GoogleService-Info.plist */; };
+		18DCDB5525D342480091671D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCDB5425D342480091671D /* Colors.swift */; };
 		18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D3E725CCA54B00282F94 /* Auth.storyboard */; };
 		18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */; };
 		18E5D3F925CCAE9700282F94 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F825CCAE9700282F94 /* Firebase.swift */; };
@@ -60,6 +61,7 @@
 		184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUp_iOSUITests.swift; sourceTree = "<group>"; };
 		184584AB25C375970074B8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188179A225C600F100424C32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18DCDB5425D342480091671D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		18E5D3E725CCA54B00282F94 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18E5D3F825CCAE9700282F94 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				1845848625C375960074B8CD /* SceneDelegate.swift */,
 				18E5D3F725CCAE8900282F94 /* API */,
 				18E5D3F625CCAE7B00282F94 /* Storyboards */,
+				18DCDB5325D342340091671D /* Globals */,
 				1845849025C375970074B8CD /* Assets.xcassets */,
 				1845849525C375970074B8CD /* Info.plist */,
 				188179A225C600F100424C32 /* GoogleService-Info.plist */,
@@ -155,6 +158,14 @@
 				184584AB25C375970074B8CD /* Info.plist */,
 			);
 			path = DrinkUp_iOSUITests;
+			sourceTree = "<group>";
+		};
+		18DCDB5325D342340091671D /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				18DCDB5425D342480091671D /* Colors.swift */,
+			);
+			path = Globals;
 			sourceTree = "<group>";
 		};
 		18E5D3EC25CCA60500282F94 /* Auth */ = {
@@ -227,6 +238,7 @@
 				1845847E25C375960074B8CD /* Frameworks */,
 				1845847F25C375960074B8CD /* Resources */,
 				DF4C1AB3A2DDB80BE93D56EE /* [CP] Embed Pods Frameworks */,
+				186C35761349CAEA8D027637 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +277,7 @@
 				184584A225C375970074B8CD /* Frameworks */,
 				184584A325C375970074B8CD /* Resources */,
 				94579AEBB02F6ADD8BB0BED1 /* [CP] Embed Pods Frameworks */,
+				D9248CE2135DFB69DBED186F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -370,6 +383,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		186C35761349CAEA8D027637 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		55BC37C5A42BB160D5D07FD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,6 +437,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9248CE2135DFB69DBED186F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF4C1AB3A2DDB80BE93D56EE /* [CP] Embed Pods Frameworks */ = {
@@ -458,6 +505,7 @@
 				18E5D3F925CCAE9700282F94 /* Firebase.swift in Sources */,
 				1845848925C375960074B8CD /* ViewController.swift in Sources */,
 				1845848525C375960074B8CD /* AppDelegate.swift in Sources */,
+				18DCDB5525D342480091671D /* Colors.swift in Sources */,
 				1845848725C375960074B8CD /* SceneDelegate.swift in Sources */,
 				18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */,
 				1845848F25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld in Sources */,
@@ -638,6 +686,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FW36D52GL8;
 				INFOPLIST_FILE = DrinkUp_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -657,6 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FW36D52GL8;
 				INFOPLIST_FILE = DrinkUp_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

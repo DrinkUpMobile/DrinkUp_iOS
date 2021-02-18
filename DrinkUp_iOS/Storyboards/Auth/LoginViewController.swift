@@ -8,32 +8,21 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
-
+    
+    @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.email.keyboardType = .emailAddress /// Special keyboard for email
-        self.email.font = .systemFont(ofSize: 16)
-        self.email.placeholder = "Type email address..."
+        self.logInButton.layer.cornerRadius = 8
+        self.logInButton.layer.masksToBounds = true
         
-        self.password.font = .systemFont(ofSize: 16)
-        self.password.isSecureTextEntry = true /// hides text when user types password. Shows this: "•••••••"
-        self.password.placeholder = "Type password..."
-        
-        self.button.layer.cornerRadius = 8 /// Rounded corners
-        self.button.backgroundColor = .gray
-        self.button.setTitle("Click me", for: .normal)
-        self.button.titleLabel?.font = .boldSystemFont(ofSize: 16)
+        self.signUpButton.layer.borderWidth = 2
+        self.signUpButton.layer.cornerRadius = 8
+        self.signUpButton.layer.masksToBounds = true
+        self.signUpButton.layer.borderColor = Colors.main.cgColor
     
-    }
-    
-    @IBAction func buttonPressed(_ sender: Any) {
-        print("Clicked")
     }
 
 }
