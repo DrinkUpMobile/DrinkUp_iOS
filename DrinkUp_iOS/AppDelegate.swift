@@ -18,10 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        
-        /// Initialize stuff here (like Firebase, 3rd party frameworks, push notifications, etc...)
-        
-        /// Called when app is launched (user sees the launch screen with this appears)
+        try! Auth.auth().signOut()
         
         return true
     }

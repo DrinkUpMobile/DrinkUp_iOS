@@ -20,12 +20,9 @@ target 'DrinkUp_iOS' do
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
+  
+  pod 'FirebaseUI'
   pod 'FirebaseUI/Auth'
-
-  pod 'FirebaseUI/Google'
-  pod 'FirebaseUI/Facebook'
-  pod 'FirebaseUI/OAuth' # Used for Sign in with Apple, Twitter, etc
-  pod 'FirebaseUI/Phone'
 
 end
 

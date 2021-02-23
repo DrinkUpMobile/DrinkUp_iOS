@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1816930625DF070200AEE45E /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816930525DF070200AEE45E /* AuthNavigationController.swift */; };
 		1845848525C375960074B8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845848425C375960074B8CD /* AppDelegate.swift */; };
 		1845848725C375960074B8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845848625C375960074B8CD /* SceneDelegate.swift */; };
-		1845848925C375960074B8CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845848825C375960074B8CD /* ViewController.swift */; };
+		1845848925C375960074B8CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845848825C375960074B8CD /* HomeViewController.swift */; };
 		1845848C25C375960074B8CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845848A25C375960074B8CD /* Main.storyboard */; };
 		1845848F25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1845848D25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld */; };
 		1845849125C375970074B8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1845849025C375970074B8CD /* Assets.xcassets */; };
 		1845849425C375970074B8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845849225C375970074B8CD /* LaunchScreen.storyboard */; };
 		1845849F25C375970074B8CD /* DrinkUp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845849E25C375970074B8CD /* DrinkUp_iOSTests.swift */; };
 		184584AA25C375970074B8CD /* DrinkUp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */; };
+		186A297325D5D35F003BEE1B /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A297225D5D35F003BEE1B /* RoundedView.swift */; };
+		186A297825D5DA06003BEE1B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A297725D5DA06003BEE1B /* SignUpViewController.swift */; };
+		186A297D25D5DD60003BEE1B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A297C25D5DD60003BEE1B /* ForgotPasswordViewController.swift */; };
+		186A298225D5E1D8003BEE1B /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 186A298125D5E1D8003BEE1B /* Strings.strings */; };
+		186A298725D5E2AE003BEE1B /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A298625D5E2AE003BEE1B /* VerifyViewController.swift */; };
+		186A298C25D5E53C003BEE1B /* ContinueSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */; };
 		188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188179A225C600F100424C32 /* GoogleService-Info.plist */; };
+		1897623925E5B48D00628691 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897623825E5B48D00628691 /* OpeningViewController.swift */; };
 		18DCDB5525D342480091671D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCDB5425D342480091671D /* Colors.swift */; };
 		18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D3E725CCA54B00282F94 /* Auth.storyboard */; };
 		18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */; };
-		18E5D3F925CCAE9700282F94 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F825CCAE9700282F94 /* Firebase.swift */; };
+		18E5D3F925CCAE9700282F94 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */; };
 		287F31B068883F94AD1F3DFF /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */; };
 		6E2F9B34BCF2E40819DADC71 /* Pods_DrinkUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2914869730E68921F06A1F /* Pods_DrinkUp_iOS.framework */; };
 		B8AD38E8F0245B861D4DAEE0 /* Pods_DrinkUp_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */; };
@@ -45,10 +53,11 @@
 
 /* Begin PBXFileReference section */
 		105B18618B90C1141C3070D7 /* Pods-DrinkUp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1816930525DF070200AEE45E /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
 		1845848125C375960074B8CD /* DrinkUp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkUp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1845848425C375960074B8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1845848625C375960074B8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1845848825C375960074B8CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1845848825C375960074B8CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1845848B25C375960074B8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1845848E25C375960074B8CD /* DrinkUp_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrinkUp_iOS.xcdatamodel; sourceTree = "<group>"; };
 		1845849025C375970074B8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,11 +69,18 @@
 		184584A525C375970074B8CD /* DrinkUp_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkUp_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184584A925C375970074B8CD /* DrinkUp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkUp_iOSUITests.swift; sourceTree = "<group>"; };
 		184584AB25C375970074B8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186A297225D5D35F003BEE1B /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		186A297725D5DA06003BEE1B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		186A297C25D5DD60003BEE1B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		186A298125D5E1D8003BEE1B /* Strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Strings.strings; sourceTree = "<group>"; };
+		186A298625D5E2AE003BEE1B /* VerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
+		186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueSignUpViewController.swift; sourceTree = "<group>"; };
 		188179A225C600F100424C32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1897623825E5B48D00628691 /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
 		18DCDB5425D342480091671D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		18E5D3E725CCA54B00282F94 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		18E5D3F825CCAE9700282F94 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FD520941D9943B38B4EE03 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,10 +147,12 @@
 				1845849225C375970074B8CD /* LaunchScreen.storyboard */,
 				1845848425C375960074B8CD /* AppDelegate.swift */,
 				1845848625C375960074B8CD /* SceneDelegate.swift */,
+				186A297125D5D33E003BEE1B /* Views */,
 				18E5D3F725CCAE8900282F94 /* API */,
 				18E5D3F625CCAE7B00282F94 /* Storyboards */,
 				18DCDB5325D342340091671D /* Globals */,
 				1845849025C375970074B8CD /* Assets.xcassets */,
+				186A298125D5E1D8003BEE1B /* Strings.strings */,
 				1845849525C375970074B8CD /* Info.plist */,
 				188179A225C600F100424C32 /* GoogleService-Info.plist */,
 				1845848D25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld */,
@@ -160,6 +178,14 @@
 			path = DrinkUp_iOSUITests;
 			sourceTree = "<group>";
 		};
+		186A297125D5D33E003BEE1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				186A297225D5D35F003BEE1B /* RoundedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		18DCDB5325D342340091671D /* Globals */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +198,13 @@
 			isa = PBXGroup;
 			children = (
 				18E5D3E725CCA54B00282F94 /* Auth.storyboard */,
+				1816930525DF070200AEE45E /* AuthNavigationController.swift */,
+				1897623825E5B48D00628691 /* OpeningViewController.swift */,
 				18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */,
+				186A297725D5DA06003BEE1B /* SignUpViewController.swift */,
+				186A297C25D5DD60003BEE1B /* ForgotPasswordViewController.swift */,
+				186A298625D5E2AE003BEE1B /* VerifyViewController.swift */,
+				186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -181,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				1845848A25C375960074B8CD /* Main.storyboard */,
-				1845848825C375960074B8CD /* ViewController.swift */,
+				1845848825C375960074B8CD /* HomeViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -198,7 +230,7 @@
 		18E5D3F725CCAE8900282F94 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				18E5D3F825CCAE9700282F94 /* Firebase.swift */,
+				18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -341,6 +373,7 @@
 				18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */,
 				188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */,
 				1845848C25C375960074B8CD /* Main.storyboard in Resources */,
+				186A298225D5E1D8003BEE1B /* Strings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,13 +535,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E5D3F925CCAE9700282F94 /* Firebase.swift in Sources */,
-				1845848925C375960074B8CD /* ViewController.swift in Sources */,
+				186A297325D5D35F003BEE1B /* RoundedView.swift in Sources */,
+				18E5D3F925CCAE9700282F94 /* FirebaseAuthManager.swift in Sources */,
+				1845848925C375960074B8CD /* HomeViewController.swift in Sources */,
+				1816930625DF070200AEE45E /* AuthNavigationController.swift in Sources */,
 				1845848525C375960074B8CD /* AppDelegate.swift in Sources */,
 				18DCDB5525D342480091671D /* Colors.swift in Sources */,
 				1845848725C375960074B8CD /* SceneDelegate.swift in Sources */,
+				186A297D25D5DD60003BEE1B /* ForgotPasswordViewController.swift in Sources */,
+				186A297825D5DA06003BEE1B /* SignUpViewController.swift in Sources */,
+				1897623925E5B48D00628691 /* OpeningViewController.swift in Sources */,
+				186A298725D5E2AE003BEE1B /* VerifyViewController.swift in Sources */,
 				18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */,
 				1845848F25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld in Sources */,
+				186A298C25D5E53C003BEE1B /* ContinueSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
