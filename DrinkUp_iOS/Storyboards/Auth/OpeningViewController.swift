@@ -18,31 +18,32 @@ class OpeningViewController: UIViewController {
     
     @IBAction func loginPressed(_ sender: UIButton){
         
-        //get default auth UI objects
-        let authUI = FUIAuth.defaultAuthUI()
-        guard authUI != nil else {
-            //default auth ui init failed
+        // Get default auth UI objects
+        guard let authUI = FUIAuth.defaultAuthUI() else {
             return
         }
         
-        //set self as app delegate
-        authUI?.delegate = self
-        authUI?.providers = [FUIEmailAuth()]
-      //get reference to auth UI view controller
-      let authViewController = authUI!.authViewController()
-      //show
-      present(authViewController, animated: true, completion: nil)
+        // Set self as app delegate
+        authUI.delegate = self
+        authUI.providers = [FUIEmailAuth()]
+        
+        // Get reference to auth UI view controller
+        let authViewController = authUI.authViewController()
+        self.present(authViewController, animated: true, completion: nil)
+        
     }
 
 }
 
 extension OpeningViewController: FUIAuthDelegate {
-  func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?){
-    if let error = error {
+    
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        if let error = error {
         print(error.localizedDescription)
-        return /// DO something here. Error
+        return /// Do something here... Error
     }
     
     self.dismiss(animated: true, completion: nil)
   }
+    
 }
