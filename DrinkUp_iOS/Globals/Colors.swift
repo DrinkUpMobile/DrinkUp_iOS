@@ -1,10 +1,3 @@
-//
-//  Colors.swift
-//  DrinkUp_iOS
-//
-//  Created by Kristopher Jackson on 2/9/21.
-//
-
 import UIKit
 
 class Colors {

@@ -1,10 +1,3 @@
-//
-//  OpeningViewController.swift
-//  DrinkUp_iOS
-//
-//  Created by Kristopher Jackson on 2/23/21.
-//
-
 import UIKit
 import FirebaseUI
 

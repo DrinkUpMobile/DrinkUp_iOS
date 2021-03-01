@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  DrinkUp_iOS
-//
-//  Created by Kristopher Jackson on 1/28/21.
-//
-
 import UIKit
 import CoreData
 import Firebase
