@@ -8,6 +8,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var messageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +29,11 @@ class LoginViewController: UIViewController {
             return
         }
         
-        FirebaseAuthManager.signIn(email: email, pass: password) { (success) in
-            if success {
-                self.dismiss(animated: true, completion: nil)
+        FirebaseAuthManager.signIn(email: email, pass: password) { (success, error) in
+            if let error = error {
+                self.setError(error)
             } else {
-                print("Email password failed!")
+                self.dismiss(animated: true, completion: nil)
             }
         }
         
@@ -44,5 +45,8 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
-
+    private func setError(_ text: String) {
+        self.messageLabel.text = text
+        self.messageLabel.textColor = .systemRed
+    }
 }

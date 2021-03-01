@@ -46,14 +46,11 @@ class SignUpViewController: UIViewController {
             
             FirebaseAuthManager.createUser(email: email, password: password) { (success, error) in
                 if success {
-                    let user = UserInfo(email: email, firstName: "Kris", lastName: "Jackson")
                     
-                    let db = Firestore.firestore()
-                    db.collection("users").document(Auth.auth().currentUser!.uid).setData([
-                        "email" : user.email as Any,
-                        "firstName": user.firstName as Any,
-                        "lastName": user.lastName as Any
-                    ])
+                    let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+                    let viewController = storyboard.instantiateViewController(identifier: ContinueSignUpViewController.storyboardID) as! ContinueSignUpViewController
+                    viewController.email = email
+                    self.navigationController?.pushViewController(viewController, animated: true)
                 
                 } else {
                     

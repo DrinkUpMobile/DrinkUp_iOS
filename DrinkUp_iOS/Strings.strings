@@ -6,4 +6,6 @@
   
 */
 
+
+"GENERIC_ERROR" = "All fields required.";
 "FORGOT_PASSWORD_HEADER" = "Forgot Password?";
