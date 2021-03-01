@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
         
         FirebaseAuthManager.signIn(email: email, pass: password) { (success, error) in
             if let error = error {
-                self.setError(error)
+                self.setError(error.localizedDescription)
             } else {
                 self.dismiss(animated: true, completion: nil)
             }
