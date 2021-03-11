@@ -11,16 +11,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        try! Auth.auth().signOut()
+        // Signs out user when app opens
+//        try! Auth.auth().signOut()
         
         return true
     }
-    
-    
-    
-    
-    /// Don't worry about stuff below unless we need it...
-    
     
     
 

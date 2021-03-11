@@ -13,6 +13,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.emailTextfield.autocorrectionType = .no
+        
         self.logInButton.layer.cornerRadius = 8
         self.logInButton.layer.masksToBounds = true
         

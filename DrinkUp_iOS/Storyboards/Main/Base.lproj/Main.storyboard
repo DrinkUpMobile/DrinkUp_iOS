@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8H6-Iy-oqU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,25 +8,149 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Profile View Controller-->
+        <scene sceneID="pRt-Y3-vjK">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="DrinkUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7vf-r8-1TA" customClass="ProfileViewController" customModule="DrinkUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lEh-MJ-mNf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <viewLayoutGuide key="safeArea" id="sQX-Jo-iJ3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="rzm-XT-RRc"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjZ-sn-fWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-238" y="110"/>
+            <point key="canvasLocation" x="-1429" y="854"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="vjn-Es-c6Y">
+            <objects>
+                <viewController storyboardIdentifier="CalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kh4-Uz-ppy" customClass="CalendarViewController" customModule="DrinkUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bC0-FX-unj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ouF-M5-By1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" selectedImage="calendar" id="fnO-nk-0Gd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPa-Mv-bzE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2088" y="854"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="O2M-e0-Knc">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8qe-aJ-bNV" customClass="HomeViewController" customModule="DrinkUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lfP-q1-fGi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-PS-eRQ">
+                                <rect key="frame" x="109.5" y="388.5" width="195" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySi-YP-Ebi" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="339" y="728" width="55" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="7mV-Ui-W8A"/>
+                                    <constraint firstAttribute="width" secondItem="ySi-YP-Ebi" secondAttribute="height" multiplier="1:1" id="vdL-Zs-9HM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="plus" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addVolume:" destination="8qe-aJ-bNV" eventType="touchUpInside" id="5lF-Bf-4gw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVI-q0-qgS">
+                                <rect key="frame" x="20" y="64" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uh-l5-pfz">
+                                <rect key="frame" x="20" y="98" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B5q-tg-NfC"/>
+                        <color key="backgroundColor" red="0.2666666667" green="0.54117647059999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B5q-tg-NfC" firstAttribute="bottom" secondItem="ySi-YP-Ebi" secondAttribute="bottom" constant="30" id="IDZ-fp-0Lr"/>
+                            <constraint firstItem="2uh-l5-pfz" firstAttribute="leading" secondItem="B5q-tg-NfC" secondAttribute="leading" constant="20" id="VQD-DX-G03"/>
+                            <constraint firstItem="sVI-q0-qgS" firstAttribute="top" secondItem="B5q-tg-NfC" secondAttribute="top" constant="20" id="a0a-eb-1xh"/>
+                            <constraint firstItem="sVI-q0-qgS" firstAttribute="leading" secondItem="B5q-tg-NfC" secondAttribute="leading" constant="20" id="iIQ-oi-zuZ"/>
+                            <constraint firstItem="nVe-PS-eRQ" firstAttribute="centerY" secondItem="lfP-q1-fGi" secondAttribute="centerY" id="j7x-z7-Tl0"/>
+                            <constraint firstItem="2uh-l5-pfz" firstAttribute="top" secondItem="sVI-q0-qgS" secondAttribute="bottom" constant="5" id="jWN-Ac-5wf"/>
+                            <constraint firstItem="B5q-tg-NfC" firstAttribute="trailing" secondItem="ySi-YP-Ebi" secondAttribute="trailing" constant="20" id="jZ5-wX-W4G"/>
+                            <constraint firstItem="nVe-PS-eRQ" firstAttribute="centerX" secondItem="lfP-q1-fGi" secondAttribute="centerX" id="pFj-8O-hwb"/>
+                            <constraint firstItem="B5q-tg-NfC" firstAttribute="trailing" secondItem="2uh-l5-pfz" secondAttribute="trailing" constant="20" id="sF6-CB-Ozy"/>
+                            <constraint firstItem="sVI-q0-qgS" firstAttribute="centerX" secondItem="lfP-q1-fGi" secondAttribute="centerX" id="z7T-ma-tOh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="drop" catalog="system" selectedImage="drop.fill" id="4yq-HZ-oPH"/>
+                    <connections>
+                        <outlet property="dataButton" destination="ySi-YP-Ebi" id="vKv-Iy-t8e"/>
+                        <outlet property="dateLabel" destination="sVI-q0-qgS" id="O4k-jl-3zN"/>
+                        <outlet property="timeLabel" destination="2uh-l5-pfz" id="yIT-2R-3Yf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5q-66-xVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2761" y="854"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="wfM-Bz-rmy">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8H6-Iy-oqU" customClass="MainTabBarController" customModule="DrinkUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f8u-lN-cLl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.2666666667" green="0.54117647059999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8qe-aJ-bNV" kind="relationship" relationship="viewControllers" id="6cS-Mb-fBM"/>
+                        <segue destination="kh4-Uz-ppy" kind="relationship" relationship="viewControllers" id="fJ5-i3-2vw"/>
+                        <segue destination="7vf-r8-1TA" kind="relationship" relationship="viewControllers" id="g4k-7l-Mrz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PbK-f1-J4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2088" y="123"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="ySi-YP-Ebi">
+            <size key="intrinsicContentSize" width="23" height="23.5"/>
+        </designable>
+    </designables>
     <resources>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="drop" catalog="system" width="101" height="128"/>
+        <image name="drop.fill" catalog="system" width="101" height="128"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
