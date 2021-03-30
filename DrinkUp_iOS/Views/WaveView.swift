@@ -73,8 +73,8 @@ class WaveView: UIView {
     //Possible to set fillColors separately.
     public convenience init(frame: CGRect, frontColor: UIColor, backColor: UIColor) {
         self.init(frame: frame)
-        self.frontColor = frontColor
-        self.backColor = backColor
+        self.frontColor = backColor
+        self.backColor = frontColor
     }
     
     required init?(coder aDecoder: NSCoder) {

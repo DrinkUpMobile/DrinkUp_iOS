@@ -20,4 +20,13 @@ extension UIView {
         self.frame.size = self.frame.size
     }
     
+    
+    func setVerticalGradientBackground(topColor top: UIColor, bottomColor bottom: UIColor) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = [top.cgColor, bottom.cgColor]
+        self.layer.insertSublayer(gradientLayer, at:0)
+    }
+    
 }

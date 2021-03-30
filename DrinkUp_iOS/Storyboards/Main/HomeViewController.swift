@@ -21,8 +21,8 @@ class HomeViewController: UIViewController {
     }()
     
     lazy var wave: WaveView = {
-        let view = WaveView(frame: self.view.frame, color: UIColor.white.withAlphaComponent(0.25))
-        view.progress = 0.5
+        let view = WaveView(frame: self.view.frame, frontColor: #colorLiteral(red: 0.0932898894, green: 0.7137736678, blue: 0.9685057998, alpha: 1), backColor: #colorLiteral(red: 0.387928158, green: 0.9177004695, blue: 0.9920321107, alpha: 1))
+        view.progress = 0.75
         view.waveHeight = 15
         view.waveDelay = 300
         return view
@@ -44,7 +44,7 @@ class HomeViewController: UIViewController {
         
         self.getTimeOfDate()
         self.timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(self.getTimeOfDate), userInfo: nil, repeats: true)
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,6 +61,7 @@ class HomeViewController: UIViewController {
     @IBAction func addVolume(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Data", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: DataNavigationController.storyboardID) as! DataNavigationController
+        viewController.modalPresentationStyle = .overFullScreen
         self.present(viewController, animated: true, completion: nil)
     }
     
