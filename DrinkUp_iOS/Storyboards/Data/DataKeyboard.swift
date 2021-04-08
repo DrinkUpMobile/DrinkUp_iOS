@@ -17,7 +17,6 @@ class DataKeyboard: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.textField.text = "500"
         self.textField.isUserInteractionEnabled = false
         
     }
@@ -56,6 +55,27 @@ class DataKeyboard: UIViewController {
         }
         
         self.view.endEditing(true)
+    }
+    
+    @IBAction func addAmountPressed(_ sender: Any) {
+        guard let text = self.textField.text else {
+            return
+        }
+        
+        let amount = Decimal(Double(text) ?? 0)
+        
+        HydrationAPI.addDrink(amount: amount) { (error) in
+            if let error = error {
+                let alertController = UIAlertController(title: "Something Went Wrong!",
+                                                        message: error.localizedDescription,
+                                                        preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+                return
+            }
+            
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func customAmountPressed(_ sender: Any) {

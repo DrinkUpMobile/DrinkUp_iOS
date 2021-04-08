@@ -16,36 +16,38 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailBackgroundView: RoundedView!
     @IBOutlet weak var passwordBackgroundView: RoundedView!
+    @IBOutlet weak var confirmPasswordBackgroundView: RoundedView!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.emailTextField.autocorrectionType = .no
         
-//        self.emailBackgroundView.layer.masksToBounds = false
-//        self.emailBackgroundView.addShadow(shadowRadius: 3,
-//                                           shadowOpacity: 1,
-//                                           shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
-//                                           shadowOffset: CGSize(width: 0, height: 2))
-//        
-//        self.passwordBackgroundView.layer.masksToBounds = false
-//        self.passwordBackgroundView.addShadow(shadowRadius: 3,
-//                                              shadowOpacity: 1,
-//                                              shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
-//                                              shadowOffset: CGSize(width: 0, height: 2))
-//        
-//        self.logInButtonView.layer.masksToBounds = false
-//        self.logInButtonView.addShadow(shadowRadius: 3,
-//                                   shadowOpacity: 1,
-//                                   shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
-//                                   shadowOffset: CGSize(width: 0, height: 2))
-//        
-//        self.signUpButtonView.layer.masksToBounds = false
-//        self.signUpButtonView.addShadow(shadowRadius: 3,
-//                                   shadowOpacity: 1,
-//                                   shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
-//                                   shadowOffset: CGSize(width: 0, height: 2))
+        self.emailBackgroundView.layer.masksToBounds = false
+        self.emailBackgroundView.addShadow(shadowRadius: 3,
+                                           shadowOpacity: 1,
+                                           shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                           shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.passwordBackgroundView.layer.masksToBounds = false
+        self.passwordBackgroundView.addShadow(shadowRadius: 3,
+                                              shadowOpacity: 1,
+                                              shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                              shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.confirmPasswordBackgroundView.layer.masksToBounds = false
+        self.confirmPasswordBackgroundView.addShadow(shadowRadius: 3,
+                                                shadowOpacity: 1,
+                                                shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                                shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.nextButton.layer.masksToBounds = false
+        self.nextButton.addShadow(shadowRadius: 3,
+                                   shadowOpacity: 1,
+                                   shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                   shadowOffset: CGSize(width: 0, height: 2))
        
     }
     

@@ -1,9 +1,8 @@
-//
-//  Hydration.swift
-//  DrinkUp_iOS
-//
-//  Created by Kristopher Jackson on 3/23/21.
-//
+
+
+
+
+
 
 import Firebase
 
@@ -25,7 +24,7 @@ class HydrationAPI {
     }
     
     
-    static func addDrink(amount: Int, _ completion: @escaping (_ error: Error?) -> Void) {
+    static func addDrink(amount: Decimal, _ completion: @escaping (_ error: Error?) -> Void) {
         
         /// Error if user is not signed in
         if self.userDocument == nil {

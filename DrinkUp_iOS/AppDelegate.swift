@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         // Signs out user when app opens
-        try! Auth.auth().signOut()
+//        try! Auth.auth().signOut()
         
         return true
     }

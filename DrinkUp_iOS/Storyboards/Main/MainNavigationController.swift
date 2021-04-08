@@ -1,9 +1,15 @@
 import UIKit
 import FirebaseUI
 
-class MainTabBarController: UITabBarController {
+protocol MainNavigationControllerDelegate {
+    func getUserData(user: [String: Any]?)
+}
+
+class MainNavigationController: UINavigationController {
     
-    static let storyboardID = "MainTabBarController"
+    static let storyboardID = "MainNavigationController"
+    
+    var controllerDelegate: MainNavigationControllerDelegate?
 
     /// `viewDidLoad()` and `viewDidAppear()` are the first set of functions that will be called when a user enters a page (ie. view controller).
     /// Think of them as constuctors. In those functions you should load any data that is important for that page
@@ -17,6 +23,9 @@ class MainTabBarController: UITabBarController {
     /// If a pop up is presented over the page, then this will NOT be called when the pop up is closed
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
+        
     }
     
     
@@ -50,7 +59,7 @@ class MainTabBarController: UITabBarController {
         
         /// Now that we have the user's document reference, we need to
         /// check to see if a snapshot (the dictionary containing the data and firebase metadata) exists
-        userDocument.getDocument { (snapshot, error) in
+        userDocument.addSnapshotListener() { (snapshot, error) in
             
             if error != nil { return } // Error! This could be a network error or something...
             
@@ -60,7 +69,8 @@ class MainTabBarController: UITabBarController {
                 
                 
                 /// If we get here then the user is successfully signed in and there is a document in Firestore for them
-                print("Sign up success. Go to home page. We have data!")
+                self.controllerDelegate?.getUserData(user: snapshot?.data())
+                
                 
             } else {
                 
@@ -71,7 +81,6 @@ class MainTabBarController: UITabBarController {
         }
         
     }
-    
     
     /// Call this function to navigate to the log in page
     private func goToLogInPage() {

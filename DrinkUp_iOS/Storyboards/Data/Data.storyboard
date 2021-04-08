@@ -44,9 +44,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-jd-xER" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-jd-xER" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                 <rect key="frame" x="184" y="772" width="180" height="60"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="Qzg-tU-KfW"/>
                                     <constraint firstAttribute="height" constant="60" id="RxO-qn-2YS"/>
@@ -60,6 +60,9 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addAmountPressed:" destination="cW7-oX-Zw3" eventType="touchUpInside" id="Oyr-mf-tqb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrM-WZ-JoS" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                 <rect key="frame" x="50" y="772" width="60" height="60"/>
@@ -296,7 +299,7 @@
                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="500" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0PQ-CJ-PWB">
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0PQ-CJ-PWB">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="85.5"/>
                                                 <color key="textColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
@@ -463,9 +466,9 @@
                                     <action selector="closePressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="QBK-XL-DF2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAF-rh-cNs" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAF-rh-cNs" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                 <rect key="frame" x="117" y="772" width="180" height="60"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Nxb-Re-z0a"/>
                                     <constraint firstAttribute="width" constant="180" id="zDX-3x-MOy"/>
@@ -479,6 +482,9 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addAmountPressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="2O2-le-KCI"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Y2-b2-Obk">
                                 <rect key="frame" x="50" y="265" width="314" height="266.5"/>
@@ -489,7 +495,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="82r-5j-0mS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Add custom amount">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -514,6 +520,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="amountPressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="TEf-Zp-D2H"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17q-Vz-xbo" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="108.5" y="164.5" width="97" height="45"/>
@@ -527,6 +536,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="amountPressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="uoF-SP-W0e"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEq-Gd-M7U" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="164.5" width="96.5" height="45"/>
@@ -543,6 +555,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="amountPressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="65L-At-Shs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLA-8l-KeA" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="107.5" width="96.5" height="45"/>
@@ -559,6 +574,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="amountPressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="FTd-D4-0q7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5C-Z8-8wB" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="108.5" y="107.5" width="97" height="45"/>
@@ -572,6 +590,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="amountPressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="nfa-Dy-pYg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-MM-ed8" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="217.5" y="107.5" width="96.5" height="45"/>
@@ -585,6 +606,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="amountPressed:" destination="oiz-60-50Y" eventType="touchUpInside" id="twq-EZ-3GA"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much water did you drink today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mof-ay-dn9">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="57.5"/>
@@ -644,6 +668,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PVP-DS-NvD"/>
+                    <connections>
+                        <outlet property="addAmount" destination="JAF-rh-cNs" id="ppB-bT-Iox"/>
+                        <outlet property="fiveHundred" destination="17q-Vz-xbo" id="w4v-xU-M5A"/>
+                        <outlet property="fourHundred" destination="PEq-Gd-M7U" id="gjl-1f-5T4"/>
+                        <outlet property="hundred" destination="oLA-8l-KeA" id="6Xb-Gu-YhS"/>
+                        <outlet property="sixHundred" destination="A7T-gn-TLn" id="pYo-j1-oYJ"/>
+                        <outlet property="threeHundred" destination="2mW-MM-ed8" id="crM-cV-ymb"/>
+                        <outlet property="twoHundred" destination="i5C-Z8-8wB" id="8mk-Cu-DzX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b5A-nZ-v0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -676,7 +709,7 @@
             <size key="intrinsicContentSize" width="20" height="22"/>
         </designable>
         <designable name="g23-vS-Pfx">
-            <size key="intrinsicContentSize" width="150" height="32"/>
+            <size key="intrinsicContentSize" width="156" height="32"/>
         </designable>
         <designable name="i5C-Z8-8wB">
             <size key="intrinsicContentSize" width="57" height="32"/>

@@ -390,7 +390,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1A5-GQ-F3k"/>
                                     <constraint firstAttribute="trailing" secondItem="fgd-21-fDz" secondAttribute="trailing" constant="20" id="3OC-sD-Y3g"/>
@@ -425,7 +425,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="zEJ-u1-xAF" firstAttribute="centerY" secondItem="K2b-oD-FOm" secondAttribute="centerY" id="1oI-gb-RVy"/>
                                     <constraint firstItem="zEJ-u1-xAF" firstAttribute="leading" secondItem="K2b-oD-FOm" secondAttribute="trailing" constant="8" id="E5u-3T-hVw"/>
@@ -465,7 +465,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="25S-Bv-GaP" secondAttribute="trailing" constant="20" id="C19-g4-w6X"/>
                                     <constraint firstAttribute="bottom" secondItem="25S-Bv-GaP" secondAttribute="bottom" constant="8" id="To2-eQ-Bxk"/>
@@ -528,10 +528,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="9qd-3g-YBK"/>
                     <connections>
+                        <outlet property="confirmPasswordBackgroundView" destination="wsw-s8-QPf" id="Jez-lq-Diz"/>
                         <outlet property="confirmPasswordTextField" destination="25S-Bv-GaP" id="b7c-Ds-6pW"/>
                         <outlet property="emailBackgroundView" destination="iOm-Hd-DkO" id="aWr-Tg-skL"/>
                         <outlet property="emailTextField" destination="fgd-21-fDz" id="Bjb-Gc-aOg"/>
                         <outlet property="messageLabel" destination="CPs-3d-Qdi" id="iVO-5G-VEF"/>
+                        <outlet property="nextButton" destination="Dzp-gM-suy" id="DgM-Te-c7n"/>
+                        <outlet property="passwordBackgroundView" destination="1Z3-wd-KNn" id="VKM-m6-qaT"/>
                         <outlet property="passwordTextField" destination="zEJ-u1-xAF" id="jSG-D1-ZQO"/>
                     </connections>
                 </viewController>
