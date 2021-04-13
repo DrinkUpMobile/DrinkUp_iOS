@@ -7,7 +7,6 @@ class HomeViewController: UIViewController {
     static let storyboardID = "HomeViewController"
     
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var subLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
@@ -57,7 +56,6 @@ class HomeViewController: UIViewController {
         self.dataButton.addShadow(shadowRadius: 3, shadowOpacity: 1, shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2), shadowOffset: CGSize(width: 0, height: 2))
         
         self.getTimeOfDate()
-        self.timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(self.getTimeOfDate), userInfo: nil, repeats: true)
         
         (self.navigationController as? MainNavigationController)?.controllerDelegate = self
     }
@@ -73,6 +71,15 @@ class HomeViewController: UIViewController {
         self.timer?.invalidate()
     }
     
+    @IBAction func goToProfilePage(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: ProfileViewController.storyboardID)
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func addVolume(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Data", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: DataNavigationController.storyboardID) as! DataNavigationController
@@ -82,7 +89,6 @@ class HomeViewController: UIViewController {
     
     @objc private func getTimeOfDate() {
         let curDate = Date()
-        self.timeLabel.text = self.formatter.string(from: curDate)
         self.dateLabel.text = self.dateFormatter.string(from: curDate)
     }
 }
@@ -96,7 +102,7 @@ extension HomeViewController: MainNavigationControllerDelegate {
             return
         }
         
-        Firestore.firestore().collection("users").document(uid).collection("drinks").getDocuments { (snapshot, error) in
+        Firestore.firestore().collection("users").document(uid).collection("drinks").addSnapshotListener { (snapshot, error) in
             
             if let error = error {
                 print(error.localizedDescription)
@@ -132,7 +138,7 @@ extension HomeViewController: MainNavigationControllerDelegate {
             let percent = (totalWater / goalInML) * 100
             
             let percentString = "\(Int(percent))".split(separator: ".")[0]
-            self.mainLabel.text = "\(percentString)%"
+            self.mainLabel.text = (percent < 100) ? "\(percentString)%" : "100%"
             
             let subLabelString = "\(round(goalInML))".split(separator: ".")[0]
             self.subLabel.text = "of \(subLabelString) mL"
@@ -143,8 +149,13 @@ extension HomeViewController: MainNavigationControllerDelegate {
             let completeString = "\(round(totalWater))".split(separator: ".")[0]
             self.completeLabel.text = "\(completeString) mL"
             
-            
-            
+            if Int(percent) < 100 {
+                self.statusLabel.text = "\(Int(goalInML - totalWater)) mL"
+                self.statusLabel.textColor = #colorLiteral(red: 0.2666666667, green: 0.5411764706, blue: 1, alpha: 1)
+            } else {
+                self.statusLabel.text = "Hydrated"
+                self.statusLabel.textColor = #colorLiteral(red: 0.08757872134, green: 0.74412328, blue: 0.3865558207, alpha: 1)
+            }
             
         }
         

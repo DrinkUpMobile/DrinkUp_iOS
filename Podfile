@@ -23,6 +23,8 @@ target 'DrinkUp_iOS' do
   
   pod 'FirebaseUI'
   pod 'FirebaseUI/Auth'
+  
+  pod "LinearProgressBar"
 
 end
 
