@@ -21,10 +21,14 @@ target 'DrinkUp_iOS' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
   
+  pod 'FirebaseUI/Storage'
+  
   pod 'FirebaseUI'
   pod 'FirebaseUI/Auth'
   
-  pod "LinearProgressBar"
+  pod 'LinearProgressBar'
+  
+  pod 'SDWebImage'
 
 end
 

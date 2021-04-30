@@ -101,7 +101,7 @@ class DataKeyboard: UIViewController {
         
         if self.textField.text != nil {
             self.addAmountButton.isEnabled = true
-            self.addAmountButton.backgroundColor = .systemBlue
+            self.addAmountButton.backgroundColor = #colorLiteral(red: 0.0932898894, green: 0.7137736678, blue: 0.9685057998, alpha: 1)
         }
     }
     

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,30 +31,43 @@
                                             <action selector="close:" destination="nXO-f4-tt2" eventType="touchUpInside" id="tLV-3z-0ds"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FR-Yg-whX">
+                                        <rect key="frame" x="341" y="60" width="53" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <state key="normal" title="Log Out">
+                                            <color key="titleColor" red="0.093289889400000006" green="0.71377366779999996" blue="0.96850579979999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logOutButton:" destination="nXO-f4-tt2" eventType="touchUpInside" id="YaF-Je-rfB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3FR-Yg-whX" secondAttribute="trailing" constant="20" id="4Dw-aH-0Qi"/>
                                     <constraint firstItem="jnj-XK-RQc" firstAttribute="centerY" secondItem="8l1-Yt-fgg" secondAttribute="centerY" id="8Vi-Im-OVC"/>
                                     <constraint firstItem="jnj-XK-RQc" firstAttribute="top" secondItem="bSL-IH-mtQ" secondAttribute="topMargin" constant="12" id="Aih-9f-rCb"/>
                                     <constraint firstItem="jnj-XK-RQc" firstAttribute="centerX" secondItem="bSL-IH-mtQ" secondAttribute="centerX" id="Glv-oN-JdK"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="jnj-XK-RQc" secondAttribute="bottom" constant="12" id="Tlf-nV-GrH"/>
                                     <constraint firstItem="8l1-Yt-fgg" firstAttribute="leading" secondItem="bSL-IH-mtQ" secondAttribute="leading" constant="20" id="bbc-ub-5cI"/>
+                                    <constraint firstItem="3FR-Yg-whX" firstAttribute="centerY" secondItem="jnj-XK-RQc" secondAttribute="centerY" id="hR1-K9-CAn"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PxC-iA-EdR">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxC-iA-EdR">
                                 <rect key="frame" x="0.0" y="105" width="414" height="791"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dke-PV-9YO" customClass="InputFieldView" customModule="DrinkUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="200" width="314" height="70.5"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dke-PV-9YO" customClass="InputFieldView" customModule="DrinkUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="210" width="314" height="66"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="School"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type school here..."/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="First Name"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type first name here..."/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oy6-BQ-AEk" customClass="RoundedImageView" customModule="DrinkUp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="132" y="20" width="150" height="150"/>
+                                        <rect key="frame" x="132" y="30" width="150" height="150"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Oy6-BQ-AEk" secondAttribute="height" multiplier="1:1" id="7xg-oF-LNU"/>
                                             <constraint firstAttribute="height" constant="150" id="Ait-Tv-zID"/>
@@ -65,16 +78,90 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYH-QN-R2D">
+                                        <rect key="frame" x="132" y="30" width="150" height="150"/>
+                                        <connections>
+                                            <action selector="tapProfilePicture:" destination="nXO-f4-tt2" eventType="touchUpInside" id="e86-Sa-X6u"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pdO-hI-n9V" customClass="InputFieldView" customModule="DrinkUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="306" width="314" height="66"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Last Name"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type last name here..."/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pg-Ld-qBQ" customClass="InputFieldView" customModule="DrinkUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="402" width="314" height="66"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Email Address"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type email here..."/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oTb-Th-9H7" customClass="InputFieldView" customModule="DrinkUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="498" width="314" height="66"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Weight"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type weight here..."/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zon-kM-Z9m" customClass="InputFieldView" customModule="DrinkUp_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="594" width="314" height="66"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="Date of Birth"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type date of birth here..."/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Oy6-BQ-AEk" firstAttribute="top" secondItem="PxC-iA-EdR" secondAttribute="top" constant="20" id="Bpd-GQ-lgh"/>
+                                    <constraint firstItem="Zon-kM-Z9m" firstAttribute="top" secondItem="oTb-Th-9H7" secondAttribute="bottom" constant="30" id="6aa-IF-Idf"/>
+                                    <constraint firstItem="Oy6-BQ-AEk" firstAttribute="top" secondItem="PxC-iA-EdR" secondAttribute="top" constant="30" id="Bpd-GQ-lgh"/>
+                                    <constraint firstItem="pdO-hI-n9V" firstAttribute="top" secondItem="dke-PV-9YO" secondAttribute="bottom" constant="30" id="EYm-zM-UMz"/>
+                                    <constraint firstItem="HYH-QN-R2D" firstAttribute="height" secondItem="Oy6-BQ-AEk" secondAttribute="height" id="NsD-eD-Abx"/>
+                                    <constraint firstItem="Zon-kM-Z9m" firstAttribute="leading" secondItem="pdO-hI-n9V" secondAttribute="leading" id="PzT-6n-gSF"/>
+                                    <constraint firstItem="HYH-QN-R2D" firstAttribute="centerX" secondItem="Oy6-BQ-AEk" secondAttribute="centerX" id="S0f-lG-ch7"/>
                                     <constraint firstItem="Oy6-BQ-AEk" firstAttribute="centerX" secondItem="PxC-iA-EdR" secondAttribute="centerX" id="Y57-y5-Bge"/>
                                     <constraint firstItem="dke-PV-9YO" firstAttribute="leading" secondItem="PxC-iA-EdR" secondAttribute="leading" constant="50" id="Zu2-39-5Ly"/>
+                                    <constraint firstItem="pdO-hI-n9V" firstAttribute="centerX" secondItem="PxC-iA-EdR" secondAttribute="centerX" id="ct9-bA-JHR"/>
+                                    <constraint firstItem="HYH-QN-R2D" firstAttribute="centerY" secondItem="Oy6-BQ-AEk" secondAttribute="centerY" id="eS1-WY-2E3"/>
+                                    <constraint firstItem="oTb-Th-9H7" firstAttribute="centerX" secondItem="PxC-iA-EdR" secondAttribute="centerX" id="fcQ-Yu-XB1"/>
                                     <constraint firstAttribute="trailing" secondItem="dke-PV-9YO" secondAttribute="trailing" constant="50" id="k33-jE-Ezf"/>
+                                    <constraint firstItem="4pg-Ld-qBQ" firstAttribute="centerX" secondItem="PxC-iA-EdR" secondAttribute="centerX" id="lCM-Cx-e6V"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zon-kM-Z9m" secondAttribute="bottom" constant="183.5" id="q2l-Nd-5Ef"/>
+                                    <constraint firstItem="HYH-QN-R2D" firstAttribute="width" secondItem="Oy6-BQ-AEk" secondAttribute="width" id="qv7-2u-Bhs"/>
+                                    <constraint firstItem="oTb-Th-9H7" firstAttribute="leading" secondItem="pdO-hI-n9V" secondAttribute="leading" id="sVF-Xw-MjP"/>
+                                    <constraint firstItem="pdO-hI-n9V" firstAttribute="leading" secondItem="dke-PV-9YO" secondAttribute="leading" id="vN0-nb-daX"/>
                                     <constraint firstItem="dke-PV-9YO" firstAttribute="top" secondItem="Oy6-BQ-AEk" secondAttribute="bottom" constant="30" id="veb-c2-EuP"/>
+                                    <constraint firstItem="oTb-Th-9H7" firstAttribute="top" secondItem="4pg-Ld-qBQ" secondAttribute="bottom" constant="30" id="vgi-cZ-v2v"/>
+                                    <constraint firstItem="4pg-Ld-qBQ" firstAttribute="leading" secondItem="pdO-hI-n9V" secondAttribute="leading" id="w77-p2-Bna"/>
                                     <constraint firstItem="dke-PV-9YO" firstAttribute="centerX" secondItem="PxC-iA-EdR" secondAttribute="centerX" id="w9A-VH-Usy"/>
+                                    <constraint firstItem="Zon-kM-Z9m" firstAttribute="centerX" secondItem="PxC-iA-EdR" secondAttribute="centerX" id="yCp-v4-BW5"/>
+                                    <constraint firstItem="4pg-Ld-qBQ" firstAttribute="top" secondItem="pdO-hI-n9V" secondAttribute="bottom" constant="30" id="ybP-6r-xl6"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASC-61-VYg" customClass="RoundedButton" customModule="DrinkUp_iOS" customModuleProvider="target">
+                                <rect key="frame" x="50" y="792" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1ft-63-03Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="UPDATE PROFILE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateTapped:" destination="nXO-f4-tt2" eventType="touchUpInside" id="6OY-c0-VFT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XEo-cc-3uN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,28 +169,48 @@
                             <constraint firstItem="bSL-IH-mtQ" firstAttribute="trailing" secondItem="XEo-cc-3uN" secondAttribute="trailing" id="2sK-t5-Kd2"/>
                             <constraint firstItem="bSL-IH-mtQ" firstAttribute="top" secondItem="ysr-fS-XYB" secondAttribute="top" id="Be1-a7-PTW"/>
                             <constraint firstItem="PxC-iA-EdR" firstAttribute="top" secondItem="bSL-IH-mtQ" secondAttribute="bottom" id="CkA-hS-MOP"/>
+                            <constraint firstItem="ASC-61-VYg" firstAttribute="centerX" secondItem="ysr-fS-XYB" secondAttribute="centerX" id="FJt-uh-lcu"/>
+                            <constraint firstItem="XEo-cc-3uN" firstAttribute="bottom" secondItem="ASC-61-VYg" secondAttribute="bottom" constant="20" id="HRj-GN-ts2"/>
                             <constraint firstItem="PxC-iA-EdR" firstAttribute="trailing" secondItem="XEo-cc-3uN" secondAttribute="trailing" id="LLy-Rw-jNm"/>
                             <constraint firstItem="bSL-IH-mtQ" firstAttribute="leading" secondItem="XEo-cc-3uN" secondAttribute="leading" id="S5k-IM-uf6"/>
+                            <constraint firstItem="ASC-61-VYg" firstAttribute="leading" secondItem="XEo-cc-3uN" secondAttribute="leading" constant="50" id="UUT-LS-80a"/>
                             <constraint firstItem="PxC-iA-EdR" firstAttribute="centerX" secondItem="ysr-fS-XYB" secondAttribute="centerX" id="jzX-dv-UUC"/>
                             <constraint firstItem="PxC-iA-EdR" firstAttribute="leading" secondItem="XEo-cc-3uN" secondAttribute="leading" id="n4F-Wn-dBE"/>
                             <constraint firstAttribute="bottom" secondItem="PxC-iA-EdR" secondAttribute="bottom" id="zXC-lv-WYl"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dobTextField" destination="Zon-kM-Z9m" id="tAn-Mc-N2R"/>
+                        <outlet property="emailTextField" destination="4pg-Ld-qBQ" id="BOk-fJ-sFp"/>
+                        <outlet property="firstNameTextField" destination="dke-PV-9YO" id="dOU-ud-y7e"/>
                         <outlet property="headerContainerView" destination="bSL-IH-mtQ" id="klf-7g-2hZ"/>
+                        <outlet property="headerLabel" destination="jnj-XK-RQc" id="qrg-jD-U0L"/>
+                        <outlet property="lastNameTextField" destination="pdO-hI-n9V" id="LO9-eb-V1X"/>
+                        <outlet property="roundedImageView" destination="Oy6-BQ-AEk" id="hw5-HE-iKp"/>
+                        <outlet property="scrollView" destination="PxC-iA-EdR" id="bOF-HV-GNT"/>
+                        <outlet property="updateProfileButton" destination="ASC-61-VYg" id="Ha6-6q-YcZ"/>
+                        <outlet property="weightTextField" destination="oTb-Th-9H7" id="2pY-Tj-yu2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQ2-Ty-wxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213.04347826086959" y="183.48214285714286"/>
+            <point key="canvasLocation" x="-210" y="17"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="ASC-61-VYg">
+            <size key="intrinsicContentSize" width="134" height="32"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -58,6 +58,9 @@ class HomeViewController: UIViewController {
         self.getTimeOfDate()
         
         (self.navigationController as? MainNavigationController)?.controllerDelegate = self
+        
+        /// Enables 'slide to dismiss' for views added to stack
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -86,6 +89,14 @@ class HomeViewController: UIViewController {
         viewController.modalPresentationStyle = .overFullScreen
         self.present(viewController, animated: true, completion: nil)
     }
+    
+    @IBAction func goToCalendar(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Calendar", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: CalendarViewController.storyboardID)
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    
     
     @objc private func getTimeOfDate() {
         let curDate = Date()
@@ -162,4 +173,13 @@ extension HomeViewController: MainNavigationControllerDelegate {
     }
     
 
+}
+
+extension HomeViewController: UIGestureRecognizerDelegate {
+    
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        /// Prevents 'slide to dismiss' for view on the root of stack
+        (navigationController!.viewControllers.count > 1) ? true : false
+    }
+    
 }

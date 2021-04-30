@@ -9,7 +9,13 @@ class ContinueSignUpViewController: UIViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var weightTextField: UITextField!
-    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var nextButton: RoundedButton!
+    
+    @IBOutlet weak var firstNameBackgroundView: RoundedView!
+    @IBOutlet weak var lastNameBackgroundView: RoundedView!
+    @IBOutlet weak var ageNameBackgroundView: RoundedView!
+    @IBOutlet weak var weightNameBackgroundView: RoundedView!
+
     
     var email: String!
     
@@ -27,10 +33,45 @@ class ContinueSignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
+        self.firstNameBackgroundView.layer.masksToBounds = false
+        self.firstNameBackgroundView.addShadow(shadowRadius: 3,
+                                           shadowOpacity: 1,
+                                           shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                           shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.lastNameBackgroundView.layer.masksToBounds = false
+        self.lastNameBackgroundView.addShadow(shadowRadius: 3,
+                                           shadowOpacity: 1,
+                                           shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                           shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.weightNameBackgroundView.layer.masksToBounds = false
+        self.weightNameBackgroundView.addShadow(shadowRadius: 3,
+                                              shadowOpacity: 1,
+                                              shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                              shadowOffset: CGSize(width: 0, height: 2))
+        
+        
         self.ageTextField.delegate = self
         self.ageTextField.inputView = self.datePicker
+        self.ageNameBackgroundView.layer.masksToBounds = false
+        self.ageNameBackgroundView.addShadow(shadowRadius: 3,
+                                                shadowOpacity: 1,
+                                                shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                                shadowOffset: CGSize(width: 0, height: 2))
         
+        
+        self.nextButton.layer.masksToBounds = false
+        self.nextButton.addShadow(shadowRadius: 3,
+                                   shadowOpacity: 1,
+                                   shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                   shadowOffset: CGSize(width: 0, height: 2))
+        
+    }
+    
+    @IBAction func closePressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func createAccountPressed(_ sender: Any) {
@@ -71,10 +112,12 @@ class ContinueSignUpViewController: UIViewController {
                         "email": self.email]
         
         userDocument.setData(userData, merge: true) { (error) in
-            if let error = error {
-                self.setError(error.localizedDescription)
-            } else {
-                self.dismiss(animated: true, completion: nil)
+            DispatchQueue.main.async {
+                if let error = error {
+                    self.setError(error.localizedDescription)
+                } else {
+                    self.dismiss(animated: true, completion: nil)
+                }
             }
         }
         
@@ -91,10 +134,14 @@ class ContinueSignUpViewController: UIViewController {
     }
         
     private func setError(_ text: String) {
-        self.messageLabel.text = text
-        self.messageLabel.textColor = .systemRed
+        self.errorAlert(title: "Uh-oh!", message: text)
     }
     
+    private func errorAlert(title: String?, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive))
+        self.present(alert, animated: true, completion: nil)
+    }
     
 }
 

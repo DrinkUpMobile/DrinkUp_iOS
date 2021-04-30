@@ -91,6 +91,10 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    @IBAction func closedPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func loginPressed(_ sender: Any) {
         guard let email = self.emailTextfield.text,
               let password = self.passwordTextfield.text else {
@@ -114,7 +118,8 @@ class LoginViewController: UIViewController {
     }
     
     private func setError(_ text: String) {
-        self.messageLabel.text = text
-        self.messageLabel.textColor = .systemRed
+        let alert = UIAlertController(title: "Uh-Oh!", message: text, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive))
+        self.present(alert, animated: true, completion: nil)
     }
 }

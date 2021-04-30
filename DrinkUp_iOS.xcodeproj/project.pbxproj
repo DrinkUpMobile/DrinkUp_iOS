@@ -33,6 +33,11 @@
 		18A0F47725F8234F00824D5C /* Data.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A0F47625F8234F00824D5C /* Data.storyboard */; };
 		18A0F47C25F8240B00824D5C /* DataNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F47B25F8240B00824D5C /* DataNavigationController.swift */; };
 		18A0F48125F8242F00824D5C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F48025F8242F00824D5C /* DataViewController.swift */; };
+		18AF93C62638C88C00AAEA9A /* HistoryDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF93C52638C88C00AAEA9A /* HistoryDateCell.swift */; };
+		18AF93C82638C89900AAEA9A /* HistoryDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AF93C72638C89900AAEA9A /* HistoryDateCell.xib */; };
+		18AF93CA2638D33600AAEA9A /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AF93C92638D33600AAEA9A /* HistoryCell.xib */; };
+		18AF93CC2638D34500AAEA9A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF93CB2638D34500AAEA9A /* HistoryCell.swift */; };
+		18AF93CE2638E57000AAEA9A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF93CD2638E57000AAEA9A /* Date.swift */; };
 		18BBE66725FAD69500D806B4 /* WaterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE66625FAD69500D806B4 /* WaterInputView.swift */; };
 		18DCDB5525D342480091671D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCDB5425D342480091671D /* Colors.swift */; };
 		18E1DC07260D305A00FCCE06 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1DC06260D305A00FCCE06 /* Window.swift */; };
@@ -40,6 +45,7 @@
 		18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D3E725CCA54B00282F94 /* Auth.storyboard */; };
 		18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */; };
 		18E5D3F925CCAE9700282F94 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */; };
+		18E5D5FD2638C0D300DB93A8 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */; };
 		18EFE2A5260149D6002596D4 /* WaterInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EFE2A4260149D6002596D4 /* WaterInputView.xib */; };
 		18F9D1DE25F18CF30023119F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1DD25F18CF30023119F /* MainNavigationController.swift */; };
 		18F9D1E625F1920F0023119F /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1E525F1920F0023119F /* WaveView.swift */; };
@@ -101,6 +107,11 @@
 		18A0F47625F8234F00824D5C /* Data.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Data.storyboard; sourceTree = "<group>"; };
 		18A0F47B25F8240B00824D5C /* DataNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataNavigationController.swift; sourceTree = "<group>"; };
 		18A0F48025F8242F00824D5C /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		18AF93C52638C88C00AAEA9A /* HistoryDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDateCell.swift; sourceTree = "<group>"; };
+		18AF93C72638C89900AAEA9A /* HistoryDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDateCell.xib; sourceTree = "<group>"; };
+		18AF93C92638D33600AAEA9A /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		18AF93CB2638D34500AAEA9A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		18AF93CD2638E57000AAEA9A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		18BBE66625FAD69500D806B4 /* WaterInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInputView.swift; sourceTree = "<group>"; };
 		18DCDB5425D342480091671D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		18E1DC06260D305A00FCCE06 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
@@ -108,6 +119,7 @@
 		18E5D3E725CCA54B00282F94 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		18EFE2A4260149D6002596D4 /* WaterInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterInputView.xib; sourceTree = "<group>"; };
 		18F9D1DD25F18CF30023119F /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		18F9D1E525F1920F0023119F /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
@@ -234,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				18A0F46D25F81D5800824D5C /* UIView.swift */,
+				18AF93CD2638E57000AAEA9A /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +262,17 @@
 				18A0F48025F8242F00824D5C /* DataViewController.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		18AF93C42638C85400AAEA9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18AF93C72638C89900AAEA9A /* HistoryDateCell.xib */,
+				18AF93C52638C88C00AAEA9A /* HistoryDateCell.swift */,
+				18AF93C92638D33600AAEA9A /* HistoryCell.xib */,
+				18AF93CB2638D34500AAEA9A /* HistoryCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		18DCDB5325D342340091671D /* Globals */ = {
@@ -268,9 +292,9 @@
 				1897623825E5B48D00628691 /* OpeningViewController.swift */,
 				18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */,
 				186A297725D5DA06003BEE1B /* SignUpViewController.swift */,
+				186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */,
 				186A297C25D5DD60003BEE1B /* ForgotPasswordViewController.swift */,
 				186A298625D5E2AE003BEE1B /* VerifyViewController.swift */,
-				186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -281,7 +305,6 @@
 				1845848A25C375960074B8CD /* Main.storyboard */,
 				18F9D1DD25F18CF30023119F /* MainNavigationController.swift */,
 				18F9D1ED25F193810023119F /* HomeViewController.swift */,
-				18F9D1F225F193900023119F /* CalendarViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -293,6 +316,7 @@
 				18E5D3ED25CCA61100282F94 /* Main */,
 				18A093FC2625021F00C22CB2 /* Profile */,
 				18A0F47525F8234000824D5C /* Data */,
+				18E5D5FB2638C08400DB93A8 /* Calendar */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -304,6 +328,16 @@
 				18E4A2AE260A8D7E00D8EEF9 /* Hydration.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		18E5D5FB2638C08400DB93A8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				18AF93C42638C85400AAEA9A /* Views */,
+				18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */,
+				18F9D1F225F193900023119F /* CalendarViewController.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		18EFE2A02601499B002596D4 /* UICollectionViewCell */ = {
@@ -451,11 +485,14 @@
 				1845849425C375970074B8CD /* LaunchScreen.storyboard in Resources */,
 				18EFE2A5260149D6002596D4 /* WaterInputView.xib in Resources */,
 				1845849125C375970074B8CD /* Assets.xcassets in Resources */,
+				18AF93C82638C89900AAEA9A /* HistoryDateCell.xib in Resources */,
 				18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */,
 				188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */,
 				18A0F47725F8234F00824D5C /* Data.storyboard in Resources */,
 				18A093FE2625023000C22CB2 /* Profile.storyboard in Resources */,
 				1845848C25C375960074B8CD /* Main.storyboard in Resources */,
+				18E5D5FD2638C0D300DB93A8 /* Calendar.storyboard in Resources */,
+				18AF93CA2638D33600AAEA9A /* HistoryCell.xib in Resources */,
 				186A298225D5E1D8003BEE1B /* Strings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186A297325D5D35F003BEE1B /* RoundedView.swift in Sources */,
+				18AF93CE2638E57000AAEA9A /* Date.swift in Sources */,
 				18A0F48125F8242F00824D5C /* DataViewController.swift in Sources */,
 				18E5D3F925CCAE9700282F94 /* FirebaseAuthManager.swift in Sources */,
 				18F9D1F325F193900023119F /* CalendarViewController.swift in Sources */,
@@ -637,9 +675,11 @@
 				186A297D25D5DD60003BEE1B /* ForgotPasswordViewController.swift in Sources */,
 				18A0940B2625067300C22CB2 /* InputFieldView.swift in Sources */,
 				186A297825D5DA06003BEE1B /* SignUpViewController.swift in Sources */,
+				18AF93CC2638D34500AAEA9A /* HistoryCell.swift in Sources */,
 				1897623925E5B48D00628691 /* OpeningViewController.swift in Sources */,
 				18F9D1EE25F193810023119F /* HomeViewController.swift in Sources */,
 				186A298725D5E2AE003BEE1B /* VerifyViewController.swift in Sources */,
+				18AF93C62638C88C00AAEA9A /* HistoryDateCell.swift in Sources */,
 				18E4A2AF260A8D7E00D8EEF9 /* Hydration.swift in Sources */,
 				18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */,
 				1845848F25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld in Sources */,

@@ -22,7 +22,6 @@ class DataSelect: UIViewController {
     
     @IBOutlet weak var addAmount: RoundedButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,7 +52,7 @@ class DataSelect: UIViewController {
             
             
             self.addAmount.isEnabled = true
-            self.addAmount.backgroundColor = .systemBlue
+            self.addAmount.backgroundColor = #colorLiteral(red: 0.0932898894, green: 0.7137736678, blue: 0.9685057998, alpha: 1)
             
         } else {
             return

@@ -11,7 +11,6 @@ class SignUpViewController: UIViewController {
     
     static let storyboardID = "SignUpViewController"
     
-    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailBackgroundView: RoundedView!
@@ -97,12 +96,12 @@ class SignUpViewController: UIViewController {
            let confirm = confirmPasswordTextField.text {
             
             if password != confirm {
-                self.messageLabel.text = "Passwords are not equal"
-                self.messageLabel.textColor = .systemRed
+                self.errorAlert(title: "Uh-Oh!", message: "Passwords are not equal")
                 return
             }
             
             FirebaseAuthManager.createUser(email: email, password: password) { (success, error) in
+                
                 if success {
                     
                     let storyboard = UIStoryboard(name: "Auth", bundle: nil)
@@ -112,13 +111,20 @@ class SignUpViewController: UIViewController {
                 
                 } else {
                     
-                    self.messageLabel.text = error?.localizedDescription ?? "Error"
-                    self.messageLabel.textColor = .systemRed
+                    if let error = error {
+                        self.errorAlert(title: "Uh-Oh!", message: error.localizedDescription)
+                    }
                     
                 }
                 
             }
             
         }
+    }
+    
+    private func errorAlert(title: String?, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive))
+        self.present(alert, animated: true, completion: nil)
     }
 }
