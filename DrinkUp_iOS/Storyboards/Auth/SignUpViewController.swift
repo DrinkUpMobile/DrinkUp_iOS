@@ -11,15 +11,79 @@ class SignUpViewController: UIViewController {
     
     static let storyboardID = "SignUpViewController"
     
-    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailBackgroundView: RoundedView!
+    @IBOutlet weak var passwordBackgroundView: RoundedView!
+    @IBOutlet weak var confirmPasswordBackgroundView: RoundedView!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.emailTextField.autocorrectionType = .no
+        
+        self.emailBackgroundView.layer.masksToBounds = false
+        self.emailBackgroundView.addShadow(shadowRadius: 3,
+                                           shadowOpacity: 1,
+                                           shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                           shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.passwordBackgroundView.layer.masksToBounds = false
+        self.passwordBackgroundView.addShadow(shadowRadius: 3,
+                                              shadowOpacity: 1,
+                                              shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                              shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.confirmPasswordBackgroundView.layer.masksToBounds = false
+        self.confirmPasswordBackgroundView.addShadow(shadowRadius: 3,
+                                                shadowOpacity: 1,
+                                                shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                                shadowOffset: CGSize(width: 0, height: 2))
+        
+        self.nextButton.layer.masksToBounds = false
+        self.nextButton.addShadow(shadowRadius: 3,
+                                   shadowOpacity: 1,
+                                   shadowColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.12),
+                                   shadowOffset: CGSize(width: 0, height: 2))
        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        /// Configure super view
+        /// Add rounded corners to iPhone X family
+        if window?.safeAreaInsets.bottom ?? 0 > 0 {
+            self.view.layer.cornerRadius = 40
+            self.view.layer.masksToBounds = true
+        }
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        /// Configure super view
+        /// Remove rounded corners to iPhone X family
+        if window?.safeAreaInsets.bottom ?? 0 > 0 {
+            self.view.layer.cornerRadius = 0
+            self.view.layer.masksToBounds = true
+        }
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        /// Configure super view
+        /// Add rounded corners to iPhone X family
+        if window?.safeAreaInsets.bottom ?? 0 > 0 {
+            self.view.layer.cornerRadius = 40
+            self.view.layer.masksToBounds = true
+        }
+        
+        self.view.endEditing(true)
     }
 
     @IBAction func backPressed(_ sender: Any) {
@@ -32,12 +96,12 @@ class SignUpViewController: UIViewController {
            let confirm = confirmPasswordTextField.text {
             
             if password != confirm {
-                self.messageLabel.text = "Passwords are not equal"
-                self.messageLabel.textColor = .systemRed
+                self.errorAlert(title: "Uh-Oh!", message: "Passwords are not equal")
                 return
             }
             
             FirebaseAuthManager.createUser(email: email, password: password) { (success, error) in
+                
                 if success {
                     
                     let storyboard = UIStoryboard(name: "Auth", bundle: nil)
@@ -47,13 +111,20 @@ class SignUpViewController: UIViewController {
                 
                 } else {
                     
-                    self.messageLabel.text = error?.localizedDescription ?? "Error"
-                    self.messageLabel.textColor = .systemRed
+                    if let error = error {
+                        self.errorAlert(title: "Uh-Oh!", message: error.localizedDescription)
+                    }
                     
                 }
                 
             }
             
         }
+    }
+    
+    private func errorAlert(title: String?, message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive))
+        self.present(alert, animated: true, completion: nil)
     }
 }

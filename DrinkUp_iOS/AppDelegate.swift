@@ -10,17 +10,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        PushNotification().registerForPushNotifications()
         
+        // Signs out user when app opens
         try! Auth.auth().signOut()
         
         return true
     }
-    
-    
-    
-    
-    /// Don't worry about stuff below unless we need it...
-    
     
     
 

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1816930625DF070200AEE45E /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816930525DF070200AEE45E /* AuthNavigationController.swift */; };
+		183BD5602613B25E00BBF891 /* DataKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BD55F2613B25E00BBF891 /* DataKeyboard.swift */; };
+		183BD5652613BB9300BBF891 /* DataSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BD5642613BB9300BBF891 /* DataSelect.swift */; };
 		1845848525C375960074B8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845848425C375960074B8CD /* AppDelegate.swift */; };
 		1845848725C375960074B8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845848625C375960074B8CD /* SceneDelegate.swift */; };
-		1845848925C375960074B8CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1845848825C375960074B8CD /* HomeViewController.swift */; };
 		1845848C25C375960074B8CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1845848A25C375960074B8CD /* Main.storyboard */; };
 		1845848F25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1845848D25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld */; };
 		1845849125C375970074B8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1845849025C375970074B8CD /* Assets.xcassets */; };
@@ -25,10 +26,32 @@
 		186A298C25D5E53C003BEE1B /* ContinueSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */; };
 		188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188179A225C600F100424C32 /* GoogleService-Info.plist */; };
 		1897623925E5B48D00628691 /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1897623825E5B48D00628691 /* OpeningViewController.swift */; };
+		18A093FE2625023000C22CB2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A093FD2625023000C22CB2 /* Profile.storyboard */; };
+		18A094032625023D00C22CB2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A094022625023D00C22CB2 /* ProfileViewController.swift */; };
+		18A0940B2625067300C22CB2 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0940A2625067300C22CB2 /* InputFieldView.swift */; };
+		18A0F46E25F81D5800824D5C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F46D25F81D5800824D5C /* UIView.swift */; };
+		18A0F47725F8234F00824D5C /* Data.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A0F47625F8234F00824D5C /* Data.storyboard */; };
+		18A0F47C25F8240B00824D5C /* DataNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F47B25F8240B00824D5C /* DataNavigationController.swift */; };
+		18A0F48125F8242F00824D5C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0F48025F8242F00824D5C /* DataViewController.swift */; };
+		18AF93C62638C88C00AAEA9A /* HistoryDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF93C52638C88C00AAEA9A /* HistoryDateCell.swift */; };
+		18AF93C82638C89900AAEA9A /* HistoryDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AF93C72638C89900AAEA9A /* HistoryDateCell.xib */; };
+		18AF93CA2638D33600AAEA9A /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AF93C92638D33600AAEA9A /* HistoryCell.xib */; };
+		18AF93CC2638D34500AAEA9A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF93CB2638D34500AAEA9A /* HistoryCell.swift */; };
+		18AF93CE2638E57000AAEA9A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF93CD2638E57000AAEA9A /* Date.swift */; };
+		18BBE66725FAD69500D806B4 /* WaterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BBE66625FAD69500D806B4 /* WaterInputView.swift */; };
 		18DCDB5525D342480091671D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DCDB5425D342480091671D /* Colors.swift */; };
+		18E1DC07260D305A00FCCE06 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1DC06260D305A00FCCE06 /* Window.swift */; };
+		18E4A2AF260A8D7E00D8EEF9 /* Hydration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A2AE260A8D7E00D8EEF9 /* Hydration.swift */; };
 		18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D3E725CCA54B00282F94 /* Auth.storyboard */; };
 		18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */; };
 		18E5D3F925CCAE9700282F94 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */; };
+		18E5D5FD2638C0D300DB93A8 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */; };
+		18E66C082641E1BE00920188 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E66C072641E1BE00920188 /* PushNotifications.swift */; };
+		18EFE2A5260149D6002596D4 /* WaterInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EFE2A4260149D6002596D4 /* WaterInputView.xib */; };
+		18F9D1DE25F18CF30023119F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1DD25F18CF30023119F /* MainNavigationController.swift */; };
+		18F9D1E625F1920F0023119F /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1E525F1920F0023119F /* WaveView.swift */; };
+		18F9D1EE25F193810023119F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1ED25F193810023119F /* HomeViewController.swift */; };
+		18F9D1F325F193900023119F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1F225F193900023119F /* CalendarViewController.swift */; };
 		287F31B068883F94AD1F3DFF /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */; };
 		6E2F9B34BCF2E40819DADC71 /* Pods_DrinkUp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2914869730E68921F06A1F /* Pods_DrinkUp_iOS.framework */; };
 		B8AD38E8F0245B861D4DAEE0 /* Pods_DrinkUp_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */; };
@@ -54,10 +77,11 @@
 /* Begin PBXFileReference section */
 		105B18618B90C1141C3070D7 /* Pods-DrinkUp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS/Pods-DrinkUp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1816930525DF070200AEE45E /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
+		183BD55F2613B25E00BBF891 /* DataKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataKeyboard.swift; sourceTree = "<group>"; };
+		183BD5642613BB9300BBF891 /* DataSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSelect.swift; sourceTree = "<group>"; };
 		1845848125C375960074B8CD /* DrinkUp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrinkUp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1845848425C375960074B8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1845848625C375960074B8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1845848825C375960074B8CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1845848B25C375960074B8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1845848E25C375960074B8CD /* DrinkUp_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrinkUp_iOS.xcdatamodel; sourceTree = "<group>"; };
 		1845849025C375970074B8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,10 +101,32 @@
 		186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueSignUpViewController.swift; sourceTree = "<group>"; };
 		188179A225C600F100424C32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1897623825E5B48D00628691 /* OpeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
+		18A093FD2625023000C22CB2 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		18A094022625023D00C22CB2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18A0940A2625067300C22CB2 /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		18A0F46D25F81D5800824D5C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		18A0F47625F8234F00824D5C /* Data.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Data.storyboard; sourceTree = "<group>"; };
+		18A0F47B25F8240B00824D5C /* DataNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataNavigationController.swift; sourceTree = "<group>"; };
+		18A0F48025F8242F00824D5C /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		18AF93C52638C88C00AAEA9A /* HistoryDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDateCell.swift; sourceTree = "<group>"; };
+		18AF93C72638C89900AAEA9A /* HistoryDateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDateCell.xib; sourceTree = "<group>"; };
+		18AF93C92638D33600AAEA9A /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		18AF93CB2638D34500AAEA9A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		18AF93CD2638E57000AAEA9A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		18BBE66625FAD69500D806B4 /* WaterInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInputView.swift; sourceTree = "<group>"; };
 		18DCDB5425D342480091671D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		18E1DC06260D305A00FCCE06 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		18E4A2AE260A8D7E00D8EEF9 /* Hydration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydration.swift; sourceTree = "<group>"; };
 		18E5D3E725CCA54B00282F94 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		18E66C072641E1BE00920188 /* PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		18EFE2A4260149D6002596D4 /* WaterInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterInputView.xib; sourceTree = "<group>"; };
+		18F9D1DD25F18CF30023119F /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		18F9D1E525F1920F0023119F /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		18F9D1ED25F193810023119F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18F9D1F225F193900023119F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3CC86658899EFCE33A689A67 /* Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOS_DrinkUp_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		687AA3558FFF3B73811966F1 /* Pods_DrinkUp_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinkUp_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FD520941D9943B38B4EE03 /* Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-DrinkUp_iOS-DrinkUp_iOSUITests/Pods-DrinkUp_iOS-DrinkUp_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +197,7 @@
 				18E5D3F725CCAE8900282F94 /* API */,
 				18E5D3F625CCAE7B00282F94 /* Storyboards */,
 				18DCDB5325D342340091671D /* Globals */,
+				18A0F46C25F81CF600824D5C /* Extensions */,
 				1845849025C375970074B8CD /* Assets.xcassets */,
 				186A298125D5E1D8003BEE1B /* Strings.strings */,
 				1845849525C375970074B8CD /* Info.plist */,
@@ -181,7 +228,51 @@
 		186A297125D5D33E003BEE1B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18F9D1E525F1920F0023119F /* WaveView.swift */,
 				186A297225D5D35F003BEE1B /* RoundedView.swift */,
+				18A0940A2625067300C22CB2 /* InputFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18A093FC2625021F00C22CB2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				18A093FD2625023000C22CB2 /* Profile.storyboard */,
+				18A094022625023D00C22CB2 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		18A0F46C25F81CF600824D5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18A0F46D25F81D5800824D5C /* UIView.swift */,
+				18AF93CD2638E57000AAEA9A /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18A0F47525F8234000824D5C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				18EFE2A02601499B002596D4 /* UICollectionViewCell */,
+				18A0F47625F8234F00824D5C /* Data.storyboard */,
+				183BD55F2613B25E00BBF891 /* DataKeyboard.swift */,
+				183BD5642613BB9300BBF891 /* DataSelect.swift */,
+				18A0F47B25F8240B00824D5C /* DataNavigationController.swift */,
+				18A0F48025F8242F00824D5C /* DataViewController.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		18AF93C42638C85400AAEA9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18AF93C72638C89900AAEA9A /* HistoryDateCell.xib */,
+				18AF93C52638C88C00AAEA9A /* HistoryDateCell.swift */,
+				18AF93C92638D33600AAEA9A /* HistoryCell.xib */,
+				18AF93CB2638D34500AAEA9A /* HistoryCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				18DCDB5425D342480091671D /* Colors.swift */,
+				18E1DC06260D305A00FCCE06 /* Window.swift */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -202,9 +294,9 @@
 				1897623825E5B48D00628691 /* OpeningViewController.swift */,
 				18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */,
 				186A297725D5DA06003BEE1B /* SignUpViewController.swift */,
+				186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */,
 				186A297C25D5DD60003BEE1B /* ForgotPasswordViewController.swift */,
 				186A298625D5E2AE003BEE1B /* VerifyViewController.swift */,
-				186A298B25D5E53C003BEE1B /* ContinueSignUpViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -213,7 +305,8 @@
 			isa = PBXGroup;
 			children = (
 				1845848A25C375960074B8CD /* Main.storyboard */,
-				1845848825C375960074B8CD /* HomeViewController.swift */,
+				18F9D1DD25F18CF30023119F /* MainNavigationController.swift */,
+				18F9D1ED25F193810023119F /* HomeViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -223,6 +316,9 @@
 			children = (
 				18E5D3EC25CCA60500282F94 /* Auth */,
 				18E5D3ED25CCA61100282F94 /* Main */,
+				18A093FC2625021F00C22CB2 /* Profile */,
+				18A0F47525F8234000824D5C /* Data */,
+				18E5D5FB2638C08400DB93A8 /* Calendar */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -231,8 +327,29 @@
 			isa = PBXGroup;
 			children = (
 				18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */,
+				18E66C072641E1BE00920188 /* PushNotifications.swift */,
+				18E4A2AE260A8D7E00D8EEF9 /* Hydration.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		18E5D5FB2638C08400DB93A8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				18AF93C42638C85400AAEA9A /* Views */,
+				18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */,
+				18F9D1F225F193900023119F /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		18EFE2A02601499B002596D4 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18EFE2A4260149D6002596D4 /* WaterInputView.xib */,
+				18BBE66625FAD69500D806B4 /* WaterInputView.swift */,
+			);
+			path = UICollectionViewCell;
 			sourceTree = "<group>";
 		};
 		6E1A27D18257AFD3C90B723D /* Pods */ = {
@@ -369,10 +486,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1845849425C375970074B8CD /* LaunchScreen.storyboard in Resources */,
+				18EFE2A5260149D6002596D4 /* WaterInputView.xib in Resources */,
 				1845849125C375970074B8CD /* Assets.xcassets in Resources */,
+				18AF93C82638C89900AAEA9A /* HistoryDateCell.xib in Resources */,
 				18E5D3E825CCA54B00282F94 /* Auth.storyboard in Resources */,
 				188179A325C600F100424C32 /* GoogleService-Info.plist in Resources */,
+				18A0F47725F8234F00824D5C /* Data.storyboard in Resources */,
+				18A093FE2625023000C22CB2 /* Profile.storyboard in Resources */,
 				1845848C25C375960074B8CD /* Main.storyboard in Resources */,
+				18E5D5FD2638C0D300DB93A8 /* Calendar.storyboard in Resources */,
+				18AF93CA2638D33600AAEA9A /* HistoryCell.xib in Resources */,
 				186A298225D5E1D8003BEE1B /* Strings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,19 +659,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				186A297325D5D35F003BEE1B /* RoundedView.swift in Sources */,
+				18AF93CE2638E57000AAEA9A /* Date.swift in Sources */,
+				18A0F48125F8242F00824D5C /* DataViewController.swift in Sources */,
 				18E5D3F925CCAE9700282F94 /* FirebaseAuthManager.swift in Sources */,
-				1845848925C375960074B8CD /* HomeViewController.swift in Sources */,
+				18F9D1F325F193900023119F /* CalendarViewController.swift in Sources */,
+				18A0F46E25F81D5800824D5C /* UIView.swift in Sources */,
+				183BD5652613BB9300BBF891 /* DataSelect.swift in Sources */,
+				18A094032625023D00C22CB2 /* ProfileViewController.swift in Sources */,
+				18A0F47C25F8240B00824D5C /* DataNavigationController.swift in Sources */,
+				18F9D1DE25F18CF30023119F /* MainNavigationController.swift in Sources */,
 				1816930625DF070200AEE45E /* AuthNavigationController.swift in Sources */,
 				1845848525C375960074B8CD /* AppDelegate.swift in Sources */,
 				18DCDB5525D342480091671D /* Colors.swift in Sources */,
+				18BBE66725FAD69500D806B4 /* WaterInputView.swift in Sources */,
+				18F9D1E625F1920F0023119F /* WaveView.swift in Sources */,
+				18E66C082641E1BE00920188 /* PushNotifications.swift in Sources */,
+				183BD5602613B25E00BBF891 /* DataKeyboard.swift in Sources */,
 				1845848725C375960074B8CD /* SceneDelegate.swift in Sources */,
 				186A297D25D5DD60003BEE1B /* ForgotPasswordViewController.swift in Sources */,
+				18A0940B2625067300C22CB2 /* InputFieldView.swift in Sources */,
 				186A297825D5DA06003BEE1B /* SignUpViewController.swift in Sources */,
+				18AF93CC2638D34500AAEA9A /* HistoryCell.swift in Sources */,
 				1897623925E5B48D00628691 /* OpeningViewController.swift in Sources */,
+				18F9D1EE25F193810023119F /* HomeViewController.swift in Sources */,
 				186A298725D5E2AE003BEE1B /* VerifyViewController.swift in Sources */,
+				18AF93C62638C88C00AAEA9A /* HistoryDateCell.swift in Sources */,
+				18E4A2AF260A8D7E00D8EEF9 /* Hydration.swift in Sources */,
 				18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */,
 				1845848F25C375960074B8CD /* DrinkUp_iOS.xcdatamodeld in Sources */,
 				186A298C25D5E53C003BEE1B /* ContinueSignUpViewController.swift in Sources */,
+				18E1DC07260D305A00FCCE06 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

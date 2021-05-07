@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calendar View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CalendarViewController" customModule="DrinkUp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="120-T4-Q1o">
+                                <rect key="frame" x="0.0" y="126" width="414" height="770"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ggh-IN-RiQ">
+                                <rect key="frame" x="132.5" y="56" width="149" height="50"/>
+                                <color key="tintColor" red="0.093289889400000006" green="0.71377366779999996" blue="0.96850579979999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="M6J-xZ-8Lc"/>
+                                    <constraint firstAttribute="width" secondItem="Ggh-IN-RiQ" secondAttribute="height" multiplier="575:193" id="zKw-hB-Fuk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xK-Ug-fKG">
+                                <rect key="frame" x="20" y="69" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2xK-Ug-fKG" secondAttribute="height" multiplier="1:1" id="Aag-5C-wMY"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="secondaryLabelColor"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="semibold">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="backPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bO5-p5-SVJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ggh-IN-RiQ" firstAttribute="centerY" secondItem="2xK-Ug-fKG" secondAttribute="centerY" id="LNx-MD-Dmk"/>
+                            <constraint firstItem="120-T4-Q1o" firstAttribute="top" secondItem="Ggh-IN-RiQ" secondAttribute="bottom" constant="20" id="a81-EM-IHt"/>
+                            <constraint firstItem="2xK-Ug-fKG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cgE-WB-4PV"/>
+                            <constraint firstItem="Ggh-IN-RiQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="g98-wL-jL8"/>
+                            <constraint firstAttribute="bottom" secondItem="120-T4-Q1o" secondAttribute="bottom" id="gfs-fs-ega"/>
+                            <constraint firstItem="120-T4-Q1o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="h2x-Xd-Kvi"/>
+                            <constraint firstItem="120-T4-Q1o" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hZJ-eJ-qwA"/>
+                            <constraint firstItem="Ggh-IN-RiQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="mcT-k9-sDK"/>
+                            <constraint firstItem="Ggh-IN-RiQ" firstAttribute="width" secondItem="Ggh-IN-RiQ" secondAttribute="height" multiplier="575:193" id="wNG-Xo-Ktf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="120-T4-Q1o" id="cQY-iy-rcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="575" height="193"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,11 +1,3 @@
-/* 
-  Strings.strings
-  DrinkUp_iOS
-
-  Created by Kristopher Jackson on 2/11/21.
-  
-*/
-
 
 "GENERIC_ERROR" = "All fields required.";
 "FORGOT_PASSWORD_HEADER" = "Forgot Password?";
