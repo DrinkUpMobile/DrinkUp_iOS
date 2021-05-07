@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import Firebase
 
 struct Drink {

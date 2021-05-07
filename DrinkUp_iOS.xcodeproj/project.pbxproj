@@ -46,6 +46,7 @@
 		18E5D3F225CCA7CA00282F94 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */; };
 		18E5D3F925CCAE9700282F94 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */; };
 		18E5D5FD2638C0D300DB93A8 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */; };
+		18E66C082641E1BE00920188 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E66C072641E1BE00920188 /* PushNotifications.swift */; };
 		18EFE2A5260149D6002596D4 /* WaterInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EFE2A4260149D6002596D4 /* WaterInputView.xib */; };
 		18F9D1DE25F18CF30023119F /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1DD25F18CF30023119F /* MainNavigationController.swift */; };
 		18F9D1E625F1920F0023119F /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9D1E525F1920F0023119F /* WaveView.swift */; };
@@ -120,6 +121,7 @@
 		18E5D3F125CCA7CA00282F94 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		18E5D5FC2638C0D300DB93A8 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		18E66C072641E1BE00920188 /* PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
 		18EFE2A4260149D6002596D4 /* WaterInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterInputView.xib; sourceTree = "<group>"; };
 		18F9D1DD25F18CF30023119F /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		18F9D1E525F1920F0023119F /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				18E5D3F825CCAE9700282F94 /* FirebaseAuthManager.swift */,
+				18E66C072641E1BE00920188 /* PushNotifications.swift */,
 				18E4A2AE260A8D7E00D8EEF9 /* Hydration.swift */,
 			);
 			path = API;
@@ -670,6 +673,7 @@
 				18DCDB5525D342480091671D /* Colors.swift in Sources */,
 				18BBE66725FAD69500D806B4 /* WaterInputView.swift in Sources */,
 				18F9D1E625F1920F0023119F /* WaveView.swift in Sources */,
+				18E66C082641E1BE00920188 /* PushNotifications.swift in Sources */,
 				183BD5602613B25E00BBF891 /* DataKeyboard.swift in Sources */,
 				1845848725C375960074B8CD /* SceneDelegate.swift in Sources */,
 				186A297D25D5DD60003BEE1B /* ForgotPasswordViewController.swift in Sources */,

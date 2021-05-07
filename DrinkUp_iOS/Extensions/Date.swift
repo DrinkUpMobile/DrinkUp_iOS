@@ -1,10 +1,3 @@
-//
-//  Date.swift
-//  DrinkUp_iOS
-//
-//  Created by Kristopher Jackson on 4/27/21.
-//
-
 import UIKit
 
 extension Date {
